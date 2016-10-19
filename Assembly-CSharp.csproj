@@ -52,6 +52,7 @@
      <Compile Include="Assets\_Scripts\CameraFollowTarget.cs" />
      <Compile Include="Assets\_Scripts\CameraTrackTarget.cs" />
      <Compile Include="Assets\_Scripts\Follower.cs" />
+     <Compile Include="Assets\_Scripts\Formation.cs" />
      <Compile Include="Assets\_Scripts\Interactable.cs" />
      <Compile Include="Assets\_Scripts\Player.cs" />
      <Compile Include="Assets\_Scripts\PlayerController.cs" />
