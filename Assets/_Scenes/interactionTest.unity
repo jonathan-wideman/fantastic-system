@@ -366,6 +366,9 @@ MonoBehaviour:
   attack: 1
   maxHealth: 10
   health: 0
+  damageTextPrefab: {fileID: 114000013042197474, guid: 9403c484420dcc94b98cf24a0634848b,
+    type: 2}
+  damageTextOffset: {x: 0, y: 2.5, z: 0}
 --- !u!4 &162923179
 Transform:
   m_ObjectHideFlags: 0
@@ -379,7 +382,7 @@ Transform:
   m_Children:
   - {fileID: 1550080262}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
 --- !u!114 &162923180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -523,7 +526,7 @@ Transform:
   - {fileID: 2024531252}
   - {fileID: 231091919}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!114 &331572714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -587,6 +590,9 @@ MonoBehaviour:
   attack: 1
   maxHealth: 10
   health: 0
+  damageTextPrefab: {fileID: 114000013042197474, guid: 9403c484420dcc94b98cf24a0634848b,
+    type: 2}
+  damageTextOffset: {x: 0, y: 2.5, z: 0}
 --- !u!1 &387829331
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,7 +661,7 @@ Transform:
   m_Children:
   - {fileID: 112343643}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
 --- !u!114 &387829335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -673,6 +679,9 @@ MonoBehaviour:
   attack: 1
   maxHealth: 10
   health: 0
+  damageTextPrefab: {fileID: 114000013042197474, guid: 9403c484420dcc94b98cf24a0634848b,
+    type: 2}
+  damageTextOffset: {x: 0, y: 2.5, z: 0}
 --- !u!1 &399076602
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,7 +895,7 @@ Transform:
   m_Children:
   - {fileID: 399076603}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!1 &945939984
 GameObject:
   m_ObjectHideFlags: 0
@@ -916,7 +925,7 @@ Transform:
   m_Children:
   - {fileID: 1017231665}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!114 &945939986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1498,7 +1507,7 @@ Transform:
   m_Children:
   - {fileID: 7614576}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
 --- !u!114 &1159030584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1516,6 +1525,9 @@ MonoBehaviour:
   attack: 1
   maxHealth: 10
   health: 0
+  damageTextPrefab: {fileID: 114000013042197474, guid: 9403c484420dcc94b98cf24a0634848b,
+    type: 2}
+  damageTextOffset: {x: 0, y: 2.5, z: 0}
 --- !u!1 &1165676574
 GameObject:
   m_ObjectHideFlags: 0
@@ -3755,7 +3767,7 @@ Transform:
   m_Children:
   - {fileID: 949772749}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
 --- !u!1 &1315033024
 GameObject:
   m_ObjectHideFlags: 0
@@ -4090,6 +4102,68 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1711191120}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1785521566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1785521569}
+  - 114: {fileID: 1785521568}
+  - 114: {fileID: 1785521567}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1785521567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1785521566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1785521568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1785521566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 5
+--- !u!4 &1785521569
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1785521566}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
 --- !u!1 &1842401583
 GameObject:
   m_ObjectHideFlags: 0
@@ -4120,7 +4194,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94f9a8f0af7ab744f8a22b26038921c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hintPrefab: {fileID: 4000010801938772, guid: 58596edc805dea84682842fc443e0917, type: 2}
+  hintPrefab: {fileID: 224000013676624210, guid: 3e39d51b83e018f44b90fc4b2201835e,
+    type: 2}
   hintOffset: {x: 0, y: 1.5, z: 0}
   battle: {fileID: 1842401586}
 --- !u!4 &1842401585
@@ -4136,7 +4211,7 @@ Transform:
   m_Children:
   - {fileID: 60850961}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
 --- !u!114 &1842401586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4185,6 +4260,9 @@ MonoBehaviour:
   attack: 1
   maxHealth: 10
   health: 0
+  damageTextPrefab: {fileID: 114000013042197474, guid: 9403c484420dcc94b98cf24a0634848b,
+    type: 2}
+  damageTextOffset: {x: 0, y: 2.5, z: 0}
 --- !u!1 &1968426196
 GameObject:
   m_ObjectHideFlags: 0
@@ -4214,7 +4292,7 @@ Transform:
   - {fileID: 1140366886}
   - {fileID: 1235866210}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!1 &2024531251
 GameObject:
   m_ObjectHideFlags: 0
