@@ -1,0 +1,33 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class GameController : MonoBehaviour {
+
+	public GameState state;
+
+	public enum GameState
+	{
+		Field,
+		Battle
+	}
+
+	public static GameController Instance () {
+		GameController game = FindObjectOfType<GameController> ();
+		if (game == null) {
+			GameObject go = new GameObject ("GameController");
+			go.tag = "GameController";
+			game = (GameController) go.AddComponent (typeof (GameController));
+		}
+		return game;
+	}
+
+	// Use this for initialization
+	void Start () {
+		state = GameState.Field;
+	}
+	
+	// Update is called once per frame
+	void Update () {
+	
+	}
+}

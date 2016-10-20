@@ -321,6 +321,7 @@ GameObject:
   - 4: {fileID: 162923179}
   - 195: {fileID: 162923177}
   - 114: {fileID: 162923180}
+  - 114: {fileID: 162923178}
   m_Layer: 0
   m_Name: Follower (1)
   m_TagString: Untagged
@@ -348,6 +349,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &162923178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 162923176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b78c9c4f89a3841bd7efcdf9e4a576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nickname: follower a
+  defeated: 0
 --- !u!4 &162923179
 Transform:
   m_ObjectHideFlags: 0
@@ -448,6 +462,7 @@ GameObject:
   - 114: {fileID: 331572711}
   - 114: {fileID: 331572714}
   - 114: {fileID: 331572715}
+  - 114: {fileID: 331572716}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -551,6 +566,19 @@ MonoBehaviour:
   - inWorld: {x: 0, y: 0, z: 0}
     offset: {x: -2, y: 0, z: -1.2}
     filled: 0
+--- !u!114 &331572716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 331572710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b78c9c4f89a3841bd7efcdf9e4a576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nickname: hero
+  defeated: 0
 --- !u!1 &387829331
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,6 +589,7 @@ GameObject:
   - 4: {fileID: 387829334}
   - 195: {fileID: 387829333}
   - 114: {fileID: 387829332}
+  - 114: {fileID: 387829335}
   m_Layer: 0
   m_Name: Follower (2)
   m_TagString: Untagged
@@ -619,6 +648,19 @@ Transform:
   - {fileID: 112343643}
   m_Father: {fileID: 0}
   m_RootOrder: 10
+--- !u!114 &387829335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 387829331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b78c9c4f89a3841bd7efcdf9e4a576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nickname: follower b
+  defeated: 0
 --- !u!1 &399076602
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,6 +1145,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1074152695}
   - 114: {fileID: 1074152694}
+  - 114: {fileID: 1074152696}
   m_Layer: 0
   m_Name: GameController
   m_TagString: GameController
@@ -1135,6 +1178,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &1074152696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1074152693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa40692f7396ca4439d544a554141e55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nickname: player team
+  battlers:
+  - {fileID: 331572716}
+  - {fileID: 162923178}
+  - {fileID: 387829335}
+  - {fileID: 1159030584}
 --- !u!43 &1133222790
 Mesh:
   m_ObjectHideFlags: 0
@@ -1368,6 +1428,7 @@ GameObject:
   - 4: {fileID: 1159030583}
   - 195: {fileID: 1159030582}
   - 114: {fileID: 1159030581}
+  - 114: {fileID: 1159030584}
   m_Layer: 0
   m_Name: Follower (3)
   m_TagString: Untagged
@@ -1426,6 +1487,19 @@ Transform:
   - {fileID: 7614576}
   m_Father: {fileID: 0}
   m_RootOrder: 11
+--- !u!114 &1159030584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1159030580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b78c9c4f89a3841bd7efcdf9e4a576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nickname: follower c
+  defeated: 0
 --- !u!1 &1165676574
 GameObject:
   m_ObjectHideFlags: 0
@@ -4010,6 +4084,8 @@ GameObject:
   - 4: {fileID: 1842401585}
   - 114: {fileID: 1842401584}
   - 114: {fileID: 1842401586}
+  - 114: {fileID: 1842401587}
+  - 114: {fileID: 1842401588}
   m_Layer: 0
   m_Name: BeginBattleInteractable
   m_TagString: Untagged
@@ -4057,6 +4133,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   complete: 0
+  turnCount: 0
+  teams:
+  - {fileID: 1074152696}
+  - {fileID: 1842401587}
+--- !u!114 &1842401587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1842401583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa40692f7396ca4439d544a554141e55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nickname: enemy team
+  battlers:
+  - {fileID: 1842401588}
+--- !u!114 &1842401588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1842401583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b78c9c4f89a3841bd7efcdf9e4a576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nickname: generic enemy
+  defeated: 0
 --- !u!1 &1968426196
 GameObject:
   m_ObjectHideFlags: 0
