@@ -10,7 +10,7 @@ public class Interactable : MonoBehaviour {
 	public Vector3 hintOffset;
 	Transform hintObject;
 
-	public void Interact () {
+	public virtual void Interact () {
 		Debug.Log ("interacting with " + this);
 	}
 

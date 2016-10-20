@@ -49,10 +49,13 @@
      <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\IcoBumpin.cs" />
      <Compile Include="Assets\ProCore\ProBuilder\API Examples\Misc\HueCube.cs" />
      <Compile Include="Assets\ProCore\ProBuilder\API Examples\Runtime Editing\RuntimeEdit.cs" />
+     <Compile Include="Assets\_Scripts\BattleController.cs" />
+     <Compile Include="Assets\_Scripts\BeginBattleInteractable.cs" />
      <Compile Include="Assets\_Scripts\CameraFollowTarget.cs" />
      <Compile Include="Assets\_Scripts\CameraTrackTarget.cs" />
      <Compile Include="Assets\_Scripts\Follower.cs" />
      <Compile Include="Assets\_Scripts\Formation.cs" />
+     <Compile Include="Assets\_Scripts\GameController.cs" />
      <Compile Include="Assets\_Scripts\Interactable.cs" />
      <Compile Include="Assets\_Scripts\Player.cs" />
      <Compile Include="Assets\_Scripts\PlayerController.cs" />
