@@ -4,6 +4,7 @@ using System.Collections;
 public class GameController : MonoBehaviour {
 
 	public GameState state;
+	public PopupManager popups;
 
 	public enum GameState
 	{
@@ -23,6 +24,7 @@ public class GameController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		popups = FindObjectOfType<PopupManager> ();
 		state = GameState.Field;
 	}
 	

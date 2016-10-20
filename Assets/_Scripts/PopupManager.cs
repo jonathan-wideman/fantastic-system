@@ -5,7 +5,7 @@ public class PopupManager : MonoBehaviour {
 
 	public TextPopup damageTextPrefab;
 
-	public TextPopup DamagePopup(float damage, Vector3 position, Transform parentTo = null) {
+	public TextPopup Damage(float damage, Vector3 position, Transform parentTo = null) {
 		TextPopup popup = Instantiate (damageTextPrefab);
 		if (parentTo != null) {
 			popup.transform.SetParent (parentTo);
