@@ -36,7 +36,8 @@ public class TextPopup : MonoBehaviour {
 	}
 
 	void Billboard () {
-		transform.LookAt (Camera.main.transform);
+		transform.LookAt (2 * transform.position - Camera.main.transform.position);
+		//transform.rotation = Quaternion.Inverse (transform.rotation);
 	}
 
 	void Expire () {
