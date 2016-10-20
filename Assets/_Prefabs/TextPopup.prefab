@@ -129,9 +129,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01c3b9726ec46a44cbd8d80b2f29731c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  style: {fileID: 11400000, guid: 385ea78996f151143a7e772212a0aa7b, type: 2}
   billboard: 1
   lifetime: 1
+  destroyOnExpire: 1
+  expired: 0
   velocity: {x: 0, y: 0, z: 0}
+  textComponent: {fileID: 0}
 --- !u!114 &114000013695282822
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -12,11 +12,13 @@ public class Battler : MonoBehaviour {
 	public float maxHealth;
 	public float health;
 
-	public TextPopup damageTextPrefab;
 	public Vector3 damageTextOffset;
+
+	GameController game;
 
 	// Use this for initialization
 	void Start () {
+		game = GameController.Instance ();
 		health = maxHealth;
 	}
 	
@@ -28,11 +30,7 @@ public class Battler : MonoBehaviour {
 	public void TakeDamage (float amount) {
 		Debug.Log (nickname + " takes " + amount + " damage");
 
-		if (damageTextPrefab != null) {
-			TextPopup popup = Instantiate (damageTextPrefab);
-			popup.transform.position = transform.position + damageTextOffset;
-			popup.textComponent.text = "" + amount;
-		}
+		game.popups.Damage (amount, transform.position + damageTextOffset);
 
 		health = Mathf.Max(0, health - amount);
 		if (health == 0) {
