@@ -360,8 +360,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56b78c9c4f89a3841bd7efcdf9e4a576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nickname: follower a
+  nickname: Follower A
+  team: {fileID: 0}
   defeated: 0
+  attack: 1
+  maxHealth: 10
+  health: 0
 --- !u!4 &162923179
 Transform:
   m_ObjectHideFlags: 0
@@ -577,8 +581,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56b78c9c4f89a3841bd7efcdf9e4a576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nickname: hero
+  nickname: Hero
+  team: {fileID: 0}
   defeated: 0
+  attack: 1
+  maxHealth: 10
+  health: 0
 --- !u!1 &387829331
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,8 +667,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56b78c9c4f89a3841bd7efcdf9e4a576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nickname: follower b
+  nickname: Follower B
+  team: {fileID: 0}
   defeated: 0
+  attack: 1
+  maxHealth: 10
+  health: 0
 --- !u!1 &399076602
 GameObject:
   m_ObjectHideFlags: 0
@@ -1498,8 +1510,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56b78c9c4f89a3841bd7efcdf9e4a576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nickname: follower c
+  nickname: Follower C
+  team: {fileID: 0}
   defeated: 0
+  attack: 1
+  maxHealth: 10
+  health: 0
 --- !u!1 &1165676574
 GameObject:
   m_ObjectHideFlags: 0
@@ -4133,6 +4149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   complete: 0
+  roundCount: 0
   turnCount: 0
   teams:
   - {fileID: 1074152696}
@@ -4162,8 +4179,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56b78c9c4f89a3841bd7efcdf9e4a576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nickname: generic enemy
+  nickname: Generic Enemy
+  team: {fileID: 0}
   defeated: 0
+  attack: 1
+  maxHealth: 10
+  health: 0
 --- !u!1 &1968426196
 GameObject:
   m_ObjectHideFlags: 0
