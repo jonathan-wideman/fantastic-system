@@ -3,7 +3,6 @@ using System.Collections;
 
 public class Interactable : MonoBehaviour {
 
-
 	bool hinted;
 
 	public Transform hintPrefab;
