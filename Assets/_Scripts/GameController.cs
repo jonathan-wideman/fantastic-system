@@ -25,6 +25,9 @@ public class GameController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		popups = FindObjectOfType<PopupManager> ();
+		if (popups == null) {
+			Debug.LogError ("No PopupManager found in scene");
+		}
 		state = GameState.Field;
 	}
 	

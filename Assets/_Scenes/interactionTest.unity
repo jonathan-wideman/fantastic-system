@@ -1167,6 +1167,7 @@ GameObject:
   - 4: {fileID: 1074152695}
   - 114: {fileID: 1074152694}
   - 114: {fileID: 1074152696}
+  - 114: {fileID: 1074152697}
   m_Layer: 0
   m_Name: GameController
   m_TagString: GameController
@@ -1186,6 +1187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
+  popups: {fileID: 0}
 --- !u!4 &1074152695
 Transform:
   m_ObjectHideFlags: 0
@@ -1216,6 +1218,19 @@ MonoBehaviour:
   - {fileID: 162923178}
   - {fileID: 387829335}
   - {fileID: 1159030584}
+--- !u!114 &1074152697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1074152693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1495d7065a561374ea7e6e149f4c38ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageTextPrefab: {fileID: 114000013042197474, guid: 9403c484420dcc94b98cf24a0634848b,
+    type: 2}
 --- !u!43 &1133222790
 Mesh:
   m_ObjectHideFlags: 0
