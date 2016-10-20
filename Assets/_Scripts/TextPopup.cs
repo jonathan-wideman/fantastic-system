@@ -4,19 +4,19 @@ using System.Collections;
 
 public class TextPopup : MonoBehaviour {
 
-	public bool billboard = true;
-	public float lifetime = 1f;
-	public bool destroyOnExpire = true;
 	public bool expired = false;
-	public Vector3 velocity;
-
 	public Text textComponent;
 
 	float expireTime;
+	TextPopupStyle style;
 
 	void OnEnable () {
 		textComponent = GetComponentInChildren<Text> ();
-		expireTime = Time.time + lifetime;
+	}
+
+	public void ApplyStyle (TextPopupStyle style) {
+		this.style = style;
+		expireTime = Time.time + style.lifetime;
 	}
 
 	void Update () {
@@ -24,25 +24,23 @@ public class TextPopup : MonoBehaviour {
 			if (Time.time >= expireTime) {
 				Expire ();
 			}
-
-			transform.Translate (velocity * Time.deltaTime, Space.World);
+			transform.Translate (style.velocity * Time.deltaTime, Space.World);
 		}
 	}
 	
 	void LateUpdate () {
-		if (billboard) {
+		if (style.billboard) {
 			Billboard ();
 		}
 	}
 
 	void Billboard () {
 		transform.LookAt (2 * transform.position - Camera.main.transform.position);
-		//transform.rotation = Quaternion.Inverse (transform.rotation);
 	}
 
 	void Expire () {
 		expired = true;
-		if (destroyOnExpire) {
+		if (style.destroyOnExpire) {
 			Destroy (gameObject);
 		}
 	}

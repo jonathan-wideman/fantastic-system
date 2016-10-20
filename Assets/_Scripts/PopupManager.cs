@@ -4,24 +4,24 @@ using System.Collections;
 public class PopupManager : MonoBehaviour {
 
 	[SerializeField]
-	TextPopup interactionHintPrefab;
-	[SerializeField]
-	TextPopup damageTextPrefab;
+	PopupManagerSettings settings;
 
 	public TextPopup Damage(float damage, Vector3 position, Transform parentTo = null) {
-		TextPopup popup = CreatePopup (damageTextPrefab, position, parentTo);
+		TextPopup popup = CreatePopup (position, parentTo);
+		popup.ApplyStyle (settings.damagePopupStyle);
 		popup.textComponent.text = "" + damage;
 		return popup;
 	}
 
 	public TextPopup InteractionHint(string text, Vector3 position, Transform parentTo = null) {
-		TextPopup popup = CreatePopup (interactionHintPrefab, position, parentTo);
+		TextPopup popup = CreatePopup (position, parentTo);
+		popup.ApplyStyle (settings.interactnHintPopupStyle);
 		popup.textComponent.text = text;
 		return popup;
 	}
 
-	TextPopup CreatePopup(TextPopup prefab, Vector3 position, Transform parentTo = null) {
-		TextPopup popup = Instantiate (prefab);
+	TextPopup CreatePopup(Vector3 position, Transform parentTo = null) {
+		TextPopup popup = Instantiate (settings.textPopupPrefab);
 		if (parentTo != null) {
 			popup.transform.SetParent (parentTo);
 			popup.transform.localPosition = position;

@@ -1223,6 +1223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1495d7065a561374ea7e6e149f4c38ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  settings: {fileID: 11400000, guid: e8d65f9cad85a104b9b5bc98c6397b38, type: 2}
   interactionHintPrefab: {fileID: 114000013042197474, guid: 3e39d51b83e018f44b90fc4b2201835e,
     type: 2}
   damageTextPrefab: {fileID: 114000013042197474, guid: 9403c484420dcc94b98cf24a0634848b,
