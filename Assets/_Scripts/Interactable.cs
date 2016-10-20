@@ -5,24 +5,28 @@ public class Interactable : MonoBehaviour {
 
 	bool hinted;
 
-	public Transform hintPrefab;
+	public string hintText;
 	public Vector3 hintOffset;
 	Transform hintObject;
+
+	GameController game;
+
+	void Start () {
+		game = GameController.Instance ();
+	}
 
 	public virtual void Interact () {
 		Debug.Log ("interacting with " + this);
 	}
 
 	public void Hint () {
-		//Debug.Log ("hint!");
 		if (hinted == false) {
 			hinted = true;
-			hintObject = Instantiate (hintPrefab, transform.position + hintOffset, transform.rotation) as Transform;//, transform);
+			hintObject = game.popups.InteractionHint(hintText, transform.position + hintOffset).transform;
 		}	
 	}
 
 	public void Unhint () {
-		//Debug.Log ("unhint!");
 		hinted = false;
 		if (hintObject != null) {
 			Destroy (hintObject.gameObject);

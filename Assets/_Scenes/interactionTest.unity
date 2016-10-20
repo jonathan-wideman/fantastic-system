@@ -366,8 +366,6 @@ MonoBehaviour:
   attack: 1
   maxHealth: 10
   health: 0
-  damageTextPrefab: {fileID: 114000013042197474, guid: 9403c484420dcc94b98cf24a0634848b,
-    type: 2}
   damageTextOffset: {x: 0, y: 2.5, z: 0}
 --- !u!4 &162923179
 Transform:
@@ -590,8 +588,6 @@ MonoBehaviour:
   attack: 1
   maxHealth: 10
   health: 0
-  damageTextPrefab: {fileID: 114000013042197474, guid: 9403c484420dcc94b98cf24a0634848b,
-    type: 2}
   damageTextOffset: {x: 0, y: 2.5, z: 0}
 --- !u!1 &387829331
 GameObject:
@@ -679,8 +675,6 @@ MonoBehaviour:
   attack: 1
   maxHealth: 10
   health: 0
-  damageTextPrefab: {fileID: 114000013042197474, guid: 9403c484420dcc94b98cf24a0634848b,
-    type: 2}
   damageTextOffset: {x: 0, y: 2.5, z: 0}
 --- !u!1 &399076602
 GameObject:
@@ -880,7 +874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a8f1fd267b7b514f832c1eb9e6f297a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hintPrefab: {fileID: 4000010801938772, guid: 58596edc805dea84682842fc443e0917, type: 2}
+  hintText: '...'
   hintOffset: {x: 0, y: 1.5, z: 0}
 --- !u!4 &871202035
 Transform:
@@ -937,7 +931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a8f1fd267b7b514f832c1eb9e6f297a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hintPrefab: {fileID: 4000010801938772, guid: 58596edc805dea84682842fc443e0917, type: 2}
+  hintText: '...'
   hintOffset: {x: 0, y: 1.5, z: 0}
 --- !u!1 &949772748
 GameObject:
@@ -1229,6 +1223,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1495d7065a561374ea7e6e149f4c38ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionHintPrefab: {fileID: 114000013042197474, guid: 3e39d51b83e018f44b90fc4b2201835e,
+    type: 2}
   damageTextPrefab: {fileID: 114000013042197474, guid: 9403c484420dcc94b98cf24a0634848b,
     type: 2}
 --- !u!43 &1133222790
@@ -1540,8 +1536,6 @@ MonoBehaviour:
   attack: 1
   maxHealth: 10
   health: 0
-  damageTextPrefab: {fileID: 114000013042197474, guid: 9403c484420dcc94b98cf24a0634848b,
-    type: 2}
   damageTextOffset: {x: 0, y: 2.5, z: 0}
 --- !u!1 &1165676574
 GameObject:
@@ -4209,8 +4203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94f9a8f0af7ab744f8a22b26038921c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hintPrefab: {fileID: 224000013676624210, guid: 3e39d51b83e018f44b90fc4b2201835e,
-    type: 2}
+  hintText: '!'
   hintOffset: {x: 0, y: 1.5, z: 0}
   battle: {fileID: 1842401586}
 --- !u!4 &1842401585
@@ -4275,8 +4268,6 @@ MonoBehaviour:
   attack: 1
   maxHealth: 10
   health: 0
-  damageTextPrefab: {fileID: 114000013042197474, guid: 9403c484420dcc94b98cf24a0634848b,
-    type: 2}
   damageTextOffset: {x: 0, y: 2.5, z: 0}
 --- !u!1 &1968426196
 GameObject:
