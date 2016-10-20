@@ -101,3 +101,9 @@ Please avoid incremental conflict resolution commits as they tend to make the in
 Instead, create a pull request for changes and wait for another contributer to review and merge the branch.
 
 _**(WIP - Additional info and explanation to come)**_
+
+### Troubleshooting
+
+- If Unity crashes while loading the project, try deleting the Library folder before reopening the project. This should not harm any content you have created since Unity uses the Library folder as a cache for compiled or processed versions of the content in the Assets folder and it will be rebuilt if it is missing when the project is opened.
+
+- If MonoDevelop hangs when opening a file, try opening a known working file and from the Build menu, select Clean All, then Rebuild All before reopening the file.
