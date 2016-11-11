@@ -12,7 +12,7 @@ As such, no distinct setting or plot have been defined and gameplay mechanics ar
 
 ### Unity
 
-- Install or update Unity to version 5.3.4f1
+- Install or update Unity to version 5.4.1f1
 - available from https://unity3d.com/get-unity/download/archive
 
 ### Git for Windows
